@@ -22,21 +22,21 @@ namespace fukuv0615
             {
                 MessageBox.Show("Bingo!");
                 count = 0;
-                ans = rand.Next(0, 101)
+                ans = rand.Next(0, 101);
 
-
-                else
+}
+            else
                  if (ans < count)
-                {
-                    MessageBox.Show("Less");
-                }
-                else
+            {
+                MessageBox.Show("Less");
+            }
+            else
                     if (ans > count)
-                {
+            {
 
-                    MessageBox.Show("Greater");
+                MessageBox.Show("Greater");
 
-                
+
             }
         }
 
@@ -44,8 +44,8 @@ namespace fukuv0615
 
 
             }
-        }
-    }
+        
+    
 
 
 
