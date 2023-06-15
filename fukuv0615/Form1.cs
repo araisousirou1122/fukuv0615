@@ -15,26 +15,32 @@ namespace fukuv0615
         private void button1_Click(object sender, EventArgs e)
         {
             count = +1;
-            MessageBox.Show = ("{count}‰ñ–Ú‚Ì’§í");
-            int guess = (Text.);
+            MessageBox.Show($"{count}‰ñ–Ú‚Ì’§í");
+            int guess = 0;
+            guess = (count);
             if (ans == guess)
             {
                 MessageBox.Show("Bingo!");
                 count = 0;
-                ans = rand.Next(0.101);
-                else if (ans < count)
-                { 
+                ans = rand.Next(0, 101)
+
+
+                else
+                 if (ans < count)
+                {
                     MessageBox.Show("Less");
-
-                else (ans > count)
-                    
-                        MessageBox.Show("Gretter");
-
-                    
-
-                    }
-
                 }
+                else
+                    if (ans > count)
+                {
+
+                    MessageBox.Show("Greater");
+
+                
+            }
+        }
+
+    }
 
 
             }
