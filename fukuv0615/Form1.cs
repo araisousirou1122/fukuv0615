@@ -14,10 +14,11 @@ namespace fukuv0615
 
         private void button1_Click(object sender, EventArgs e)
         {
-            count = +1;
+            count  ++;
             MessageBox.Show($"{count}回目の挑戦");
-            int guess = 0;
-            guess = (count);
+            int guess ;
+            guess = int.Parse(textBox1.Text);
+
             if (ans == guess)
             {
                 MessageBox.Show("Bingo!");
@@ -26,12 +27,12 @@ namespace fukuv0615
 
 }
             else
-                 if (ans < count)
+                 if (ans >guess)
             {
                 MessageBox.Show("Less");
             }
             else
-                    if (ans > count)
+                    if (ans < guess)
             {
 
                 MessageBox.Show("Greater");
@@ -49,6 +50,3 @@ namespace fukuv0615
 
 
 
-/*ansがguessと等しかったら、MessageBoxでBingo!!と表示して、countに0を代入して、ansに0～100までの乱数を求め直す
-ansがguessより小さかったら、MessageBoxでLessと表示
-ansがguessより大きかったら、MessageBoxでGreaterと表示*/
